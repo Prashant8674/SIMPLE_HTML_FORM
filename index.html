@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Registration Form</title>
+</head>
+<style>
+    h1{
+        display: flex;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blue;
+        font-size: 45px;
+        justify-content: center;
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form input{
+        width: 400px;
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 8px;
+        border: none;
+        border: 1px solid gray;
+    }
+    #submit-btn{
+        width: 200px;
+        background-color: greenyellow;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+
+</style>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form action="#" method="post" onsubmit="return validation()">
+            <div class="form-group">
+                <label>NAME*</label><br>
+                <input type="text" name="name" placeholder="Enter your name..">
+            </div>
+            <div class="form-group">
+                <label>EMAIL*</label><br>
+                <input type="text" name="email" placeholder="Enter your email..">
+            </div>
+            <div class="form-group">
+                <label>PHONE NO*</label><br>
+                <input type="tel" name="phoneNo" placeholder="Enter your phonenumber..">
+            </div>
+            <div class="form-group">
+                <label>ADHAR NO*</label><br>
+                <input type="number" name="adharNo" placeholder="Enter your adharNo..">
+            </div>
+            <div class="form-group">
+                <label>PAN NO*</label><br>
+                <input type="text" name="panNo" placeholder="Enter your panNo..">
+            </div>
+            <div class="form-group">
+                <label>PASSWORD*</label><br>
+                <input type="password" name="password" placeholder="Enter your password..">
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit" value="Submit" id="submit-btn">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
